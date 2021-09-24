@@ -36,18 +36,18 @@
 // После этого второй игрок делает то же самое
 // Вывести в консоль кто победил: игрок1 или игрок2 согласно правилам игры
 
-// const plOne = prompt(`Player One enter: stone, scissors or paper`);
-// const plTwo = prompt(`Player Two enter: stone, scissors or paper`);
+const plOne = prompt(`Player One enter: stone, scissors or paper`);
+const plTwo = prompt(`Player Two enter: stone, scissors or paper`);
 
-// if (plOne === `stone` && plTwo === `scissors`
-//     || plOne === `scissors` && plTwo === `paper`
-//     || plOne === `paper` && plTwo === `stone`) {
-//     console.log(`player One winner!`);
-// } else if (plOne === plTwo) {
-//     console.log(`DRAW!`);
-// } else {
-//     console.log(`player Two winner!`);
-// }
+if (plOne === `stone` && plTwo === `scissors`
+    || plOne === `scissors` && plTwo === `paper`
+    || plOne === `paper` && plTwo === `stone`) {
+    console.log(`player One winner!`);
+} else if (plOne === plTwo) {
+    console.log(`DRAW!`);
+} else {
+    console.log(`player Two winner!`);
+}
 
 
 
