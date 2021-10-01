@@ -1,6 +1,6 @@
 // 1. Даны 2 массива:
-let people1 = ['Samuel', 'Jack', 'Thomas','Henry','Leo','Connor','David','Ryan'];
-let people2 = ['Connor','Stanley','Leo', 'Albert','Owen','Oliver','Ethan','Thomas'];
+// let people1 = ['Samuel', 'Jack', 'Thomas','Henry','Leo','Connor','David','Ryan'];
+// let people2 = ['Connor','Stanley','Leo', 'Albert','Owen','Oliver','Ethan','Thomas'];
 
 // 1.1. Пользователь вводит имя, если это имя есть в массиве people1, добавьте это имя в конец people2.
 // 1.2. Пользователь вводит имя, если это имя есть в массиве people2, удалите это имя из массива.
@@ -37,18 +37,36 @@ let people2 = ['Connor','Stanley','Leo', 'Albert','Owen','Oliver','Ethan','Thoma
 // }
 // console.log(arrNew);
 
-// 1.4, 1.5 ???
-let arrNew = [];
-for (let i = 0; i < people1.length; i++) {
-    for (let n = 0; n < people2.length; n++) {
-        if (people1[i] === people2[n]) {
-            people2.splice(people2.indexOf(people2[n]), 1);
-        }
-    }
-}
+// 1.4, 1.5 
+// let arrNew = [];
+// for (let i = 0; i < people1.length; i++) {
+//     for (let n = 0; n < people2.length; n++) {
+//         if (people1[i] === people2[n]) {
+//             people2.splice(people2.indexOf(people2[n]), 1);
+//         }
+//     }
+// }
 
-arrNew = people1.concat(people2).sort();
-console.log(arrNew);
+// arrNew = people1.concat(people2);
+// console.log(arrNew);
+
+// let arrLast = [];
+// let minName;
+// let indexName;
+// for (let a = 0; a < arrNew.length;) {
+//     minName = arrNew[0];
+//     for (let i = 0; i < arrNew.length; i++) {
+//         if (minName > arrNew[i]) {
+//             minName = arrNew[i];
+//             indexName = i;
+//         } else if (minName === arrNew[i]) {
+//             indexName = 0;
+//         }
+//     }
+//     arrLast.push(minName);
+//     arrNew.splice(indexName, 1);
+// }
+// console.log(arrLast);
 
 
 
